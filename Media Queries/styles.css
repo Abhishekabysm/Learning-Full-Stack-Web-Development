@@ -1,0 +1,30 @@
+body {
+  /* background-color: red; */
+  color: white;
+}
+
+.boxes {
+  display: flex;
+}
+
+.box {
+  width: 344px;
+  height: 344px;
+  background-color: steelblue;
+  padding: 3px;
+  margin: 3px;
+}
+
+/* @media only screen and (max-width: 500px) {
+  body {
+    background-color: greenyellow;
+    color: white;
+  }
+} */
+
+@media only screen and (max-width: 500px) {
+  .boxes {
+    display: flex;
+    flex-direction: column;
+  }
+}
