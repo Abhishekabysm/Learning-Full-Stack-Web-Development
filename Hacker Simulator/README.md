@@ -4,9 +4,7 @@ This project simulates a "hacker" terminal experience using HTML, CSS, and JavaS
 
 ## Features
 
-- **Interactive Terminal:** Users can type commands and receive responses, simulating a hacker environment.
 - **Animated Text:** Typing animations and effects create a realistic terminal feel.
-- **Customizable Commands:** Add or modify commands to enhance the simulation.
 - **Responsive Design:** The interface adjusts to different screen sizes for an optimal experience on any device.
 
 ## Demo
