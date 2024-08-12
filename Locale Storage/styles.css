@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  gap: 20px; /* Increased space between items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 30px; /* Increased padding around the container */
+  background: linear-gradient(
+    135deg,
+    #e0e0e0,
+    #ffffff
+  ); /* Gradient background */
+  border: 2px solid #bbb; /* Slightly darker border */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for depth */
+}
+
+.verify {
+  margin-top: 10px;
+  width: fit-content;
+  font-size: 1.25em; /* Precise font size */
+  font-weight: bold; /* Standard font weight */
+  color: #d32f2f; /* Slightly darker red */
+  border: 2px solid #333; /* Darker border */
+  border-radius: 8px; /* More rounded corners */
+  padding: 15px; /* Increased padding for better spacing */
+  background-color: #fff3f3; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.verify:hover {
+  background-color: #ffd6d6; /* Slightly different background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button {
+  background-color: #4caf50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the button inline-block */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 12px; /* More rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+button:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  transform: scale(1.05); /* Slightly reduce size when clicked */
+}
