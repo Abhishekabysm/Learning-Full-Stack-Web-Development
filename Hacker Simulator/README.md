@@ -22,7 +22,7 @@ https://hacking-simulation.vercel.app/
 To try out the Hacker Simulator, simply clone the repository and open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/your-username/hacker-simulator.git
+git clone https://github.com/Abhishekabysm/hacker-simulator.git
 cd hacker-simulator
 open index.html
 ```
