@@ -1,4 +1,4 @@
----
+
 # Analog Clock
 
 This project is a simple analog clock built using HTML, CSS, and JavaScript. The clock displays the current time with moving hour, minute, and second hands.
@@ -43,4 +43,4 @@ You can customize the clock by editing the `style.css` file to change the colors
 
 This project is open-source and available under the [MIT License](LICENSE).
 
----
+
