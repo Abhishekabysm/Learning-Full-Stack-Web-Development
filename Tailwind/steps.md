@@ -1,17 +1,21 @@
-# Steps To Install Tailwind CSS
+# Steps to Install Tailwind CSS
 
-## Step-1
+Follow these steps to set up Tailwind CSS in your project.
 
-```
+## Step 1: Install Tailwind CSS
+
+Run the following commands to install Tailwind CSS and initialize the configuration:
+
+```bash
 npm install -D tailwindcss
 npx tailwindcss init
 ```
 
-## Step-2
+## Step 2: Configure Tailwind CSS
 
-```
-Add these in to tailwind.config:-
+Edit the `tailwind.config.js` file to include the paths to your HTML and JavaScript files:
 
+```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -22,38 +26,36 @@ module.exports = {
 }
 ```
 
-## Step-4
+## Step 3: Create the CSS File
 
-```
-Create src folder and inside make a input.css file and add these in to that css file:-
+Create a `src` folder if it doesn't exist, and inside it, create a file named `input.css`. Add the following Tailwind directives to this file:
 
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
 
-## Step-5
+## Step 4: Add Build Script
 
-```
-Go to the package.json and inside the scripts below test add this:-
+Open `package.json` and add the following build script inside the `scripts` section, below the existing scripts:
 
+```json
 "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
-
-NOTE:- Dont remove any type of quotations.
 ```
 
-## Step-6
+**Note:** Ensure that you do not remove any quotation marks.
 
-```
-Paste this in to the terminal:-
+## Step 5: Start the Tailwind CSS Build Process
 
+Run the following command in your terminal to start the Tailwind CSS build process and watch for changes:
+
+```bash
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
-
-NOTE:- use all npm/npx inside the terminal
 ```
 
-## Step-7
+**Note:** Use `npm` or `npx` commands within the terminal.
 
-```
-Now you can open your live server and see the changes.
-```
+## Step 6: View Changes
+
+Open your live server to view the changes and start using Tailwind CSS in your project.
