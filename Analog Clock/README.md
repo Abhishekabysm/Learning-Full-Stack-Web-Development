@@ -24,7 +24,7 @@ https://analog-clock-neon-ten.vercel.app/
 To use this project, simply clone the repository and open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/your-username/analog-clock.git
+git clone https://github.com/Abhishekabysm/analog-clock.git
 cd analog-clock
 open index.html
 ```
