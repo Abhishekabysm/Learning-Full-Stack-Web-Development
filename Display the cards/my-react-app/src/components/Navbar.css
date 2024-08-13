@@ -1,0 +1,126 @@
+/* Navbar Container */
+.main {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 15px 30px; /* Padding around the navbar */
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: white; /* White text color */
+    position: relative; /* Relative positioning for absolute children */
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white; /* White text color for the logo */
+    text-transform: uppercase; /* Make the logo text uppercase */
+    letter-spacing: 2px; /* Space out the letters for a sleek look */
+}
+
+/* Navigation Links Container */
+.nav-links {
+    display: flex;
+    gap: 25px; /* Space between each link */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Individual List Items */
+.nav-links li {
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Links Styling */
+.nav-links li a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    padding: 5px 10px; /* Add padding around the links */
+    border-radius: 4px; /* Slightly round the corners */
+}
+
+/* Hover Effect on Links */
+.nav-links li a:hover {
+    color: #f0a500; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a semi-transparent background on hover */
+    transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+    display: none; /* Hide the menu button on larger screens */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    font-size: 24px; /* Font size for the button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor for clickable button */
+}
+
+/* Mobile Navigation Links Container */
+.nav-links-mobile {
+    display: none; /* Hide mobile navigation links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position absolutely */
+    top: 60px; /* Adjust top position based on navbar height */
+    right: 0; /* Align to the right */
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient background */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding around the mobile menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for display effect */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-20px); /* Start with menu above the screen */
+    z-index: 1000; /* Ensure the mobile menu appears above other content */
+}
+
+/* Mobile Navigation Links Show */
+.nav-links-mobile.active {
+    display: flex; /* Show mobile navigation links when active */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Slide into view */
+}
+
+/* Mobile Navigation Links Items */
+.nav-links-mobile li {
+    list-style-type: none;
+    margin-bottom: 15px; /* Space between mobile menu items */
+    text-align: center; /* Center-align the text */
+}
+
+/* Mobile Navigation Links Items - Links Styling */
+.nav-links-mobile li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    padding: 10px; /* Add padding around the links for better touch targets */
+    border-radius: 8px; /* Round the corners more for a button-like appearance */
+    display: block; /* Make links block elements for full-width clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Mobile Navigation Links Items - Hover Effect */
+.nav-links-mobile li a:hover {
+    color: #f0a500; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Add a semi-transparent background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide desktop navigation links */
+    }
+
+    .menu-btn {
+        display: block; /* Show the menu button on smaller screens */
+    }
+}

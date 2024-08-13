@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+  background-color: #f0f4f8; /* Very light background for the whole page */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Container for Cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+  justify-content: center; /* Center the grid in the container */
+}
+
+/* Individual Card Styling */
+.card {
+  cursor: pointer;
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+  overflow: hidden; /* Ensure content doesn't overflow rounded corners */
+  position: relative; /* Position relative for potential absolute children */
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-8px); /* Lift the card slightly on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* More pronounced shadow on hover */
+  background-color: #f9f9f9; /* Slightly change background color on hover */
+}
+
+/* Card Title Styling */
+.card h1 {
+  font-size: 24px; /* Slightly larger font size for the title */
+  color: #222; /* Darker color for the title */
+  margin-bottom: 10px; /* Space below the title */
+  font-weight: 700; /* Bold font weight */
+  font-family: 'Roboto', sans-serif; /* Different font for titles */
+}
+
+/* Card Body Styling */
+.card p {
+  font-size: 16px; /* Larger font size for readability */
+  color: #555; /* Medium gray color for the body text */
+  line-height: 1.6; /* Increase line height for readability */
+  margin-bottom: 15px; /* Space below the paragraph */
+}
+
+/* Card Footer */
+.card span {
+  display: block; /* Ensure the userID appears on a new line */
+  font-size: 14px; /* Slightly larger font size for the userID */
+  color: #888; /* Light gray color for the userID */
+  text-align: right; /* Align the userID text to the right */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+  }
+
+  .card {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .card h1 {
+      font-size: 20px; /* Smaller font size for titles */
+  }
+
+  .card p {
+      font-size: 14px; /* Smaller font size for body text */
+  }
+}
