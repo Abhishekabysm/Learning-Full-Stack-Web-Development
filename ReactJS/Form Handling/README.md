@@ -20,7 +20,7 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/react-form-example.git
+git clone https://github.com/Abhishekabysm/react-form-example.git
 cd react-form-example
 ```
 
