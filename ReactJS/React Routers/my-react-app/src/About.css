@@ -1,0 +1,70 @@
+/* About.css */
+
+.about-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .about-header {
+    text-align: center; /* Center the text */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 40px 20px; /* Add padding around the header */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 40px; /* Space below the header */
+  }
+  
+  .about-header h1 {
+    font-size: 36px; /* Larger font size for the main heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Darker color for the text */
+  }
+  
+  .about-header p {
+    font-size: 18px; /* Slightly smaller font for the subtext */
+    color: #777; /* Lighter grey color for the subtext */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .about-section {
+    margin-bottom: 40px; /* Space below each section */
+  }
+  
+  .about-section h2 {
+    font-size: 28px; /* Larger font for section headings */
+    color: #333; /* Dark color for headings */
+    margin-bottom: 15px; /* Space below the heading */
+  }
+  
+  .about-section p {
+    font-size: 16px; /* Regular font size for paragraphs */
+    color: #555; /* Medium grey for paragraph text */
+    line-height: 1.6; /* Increase line height for readability */
+  }
+  
+  .team-members {
+    display: flex; /* Flexbox to arrange team members side by side */
+    justify-content: space-around; /* Space out the team members */
+    flex-wrap: wrap; /* Wrap items on small screens */
+  }
+  
+  .team-member {
+    background-color: #eee; /* Light grey background for team member cards */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    width: 30%; /* Each team member card takes up 30% of the container's width */
+    margin-bottom: 20px; /* Space below each card */
+  }
+  
+  .team-member h3 {
+    font-size: 22px; /* Font size for team member names */
+    margin-bottom: 10px; /* Space below the name */
+    color: #333; /* Dark color for names */
+  }
+  
+  .team-member p {
+    font-size: 16px; /* Font size for team member roles */
+    color: #777; /* Grey color for roles */
+  }
+  

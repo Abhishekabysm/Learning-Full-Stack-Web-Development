@@ -1,0 +1,93 @@
+/* Contact.css */
+
+.contact-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .contact-header {
+    text-align: center; /* Center the text */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 40px 20px; /* Add padding around the header */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 40px; /* Space below the header */
+  }
+  
+  .contact-header h1 {
+    font-size: 36px; /* Larger font size for the main heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Darker color for the text */
+  }
+  
+  .contact-header p {
+    font-size: 18px; /* Slightly smaller font for the subtext */
+    color: #777; /* Lighter grey color for the subtext */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .contact-form-section {
+    margin-bottom: 40px; /* Space below the form section */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Space below each form group */
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+    resize: vertical; /* Allow vertical resizing of the textarea */
+  }
+  
+  .submit-button {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .contact-info-section {
+    margin-bottom: 40px; /* Space below the contact info section */
+    font-size: 18px; /* Slightly larger font for contact details */
+    color: #555;
+  }
+  
+  .map-section {
+    text-align: center;
+  }
+  
+  .map-placeholder {
+    background-color: #eaeaea; /* Light grey background */
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
