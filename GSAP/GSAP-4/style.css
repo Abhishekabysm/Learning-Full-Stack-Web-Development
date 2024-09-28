@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  font-size: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  width: 70vw;
+  height: 40vh;
+  background-color: red;
+  position: absolute;
+  background: transparent;
+}
+
+.cursor-follower {
+  width: 70vw;
+  height: 40vh;
+  /* background-color: red; */
+  background: url("https://img.freepik.com/free-photo/illustration-anime-character-rain_23-2151394670.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725926400&semt=ais_hybrid");
+  background-size: cover;
+}

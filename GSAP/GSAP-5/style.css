@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  /* background-color: lightblue; */
+  background: url("https://images.pexels.com/photos/395196/pexels-photo-395196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  color: #111;
+}
+
+.nav h2 {
+  font-size: 2rem;
+  /* font-weight: 800; */
+}
+
+.nav i {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.full {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.355);
+  top: 0;
+  right: -40%;
+  backdrop-filter: blur(10px);
+  padding: 75px 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.full:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-left: 0;
+  padding-top: 50px;
+}
+
+.full i {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.open-nav {
+  cursor: pointer;
+}
+
+.close-nav {
+  cursor: pointer;
+}
